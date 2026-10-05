@@ -1,5 +1,7 @@
 # Aurelia — Fine Jewellery (frontend demo)
 
+**Live demo:** https://aurelia-jewellery-897.netlify.app
+
 A premium jewellery storefront built with **React + Vite + Tailwind CSS**. It includes interactive **3D jewellery**, a **live camera virtual try-on**, and a **gold price calculator**.
 
 > Frontend only: no backend, database or API server. Products are mock data, and the cart, wishlist, orders and reviews are stored in `localStorage`. Checkout and payment are simulated.
