@@ -1,0 +1,35 @@
+{
+  "name": "aurelia-jewellery",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Aurelia Fine Jewellery — a frontend-only luxury jewellery store with 3D viewing and virtual try-on.",
+  "scripts": {
+    "dev": "vite",
+    "dev:mobile": "vite --host --mode https",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:mobile": "vite preview --host --mode https",
+    "generate:models": "node scripts/generate-models.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "framer-motion": "^14.0.0",
+    "lucide-react": "^1.52.0",
+    "react": "~19.3.0",
+    "react-dom": "~19.3.0",
+    "react-router-dom": "^7.18.4",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.2"
+  }
+}
