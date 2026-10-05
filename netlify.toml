@@ -1,0 +1,23 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Single-page app: let React Router handle every route
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Allow the camera for the virtual try-on
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "camera=(self)"
